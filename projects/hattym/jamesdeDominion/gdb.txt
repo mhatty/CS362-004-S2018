@@ -1,0 +1,91 @@
+Breakpoint 1 at 0x403a6a: file dominion.c, line 676.
+Starting program: /nfs/stak/users/hattym/CS362/week6/jamesdeDominion/cardtest1 
+
+Breakpoint 1, smithyCard (currentPlayer=0, handPos=1, state=0x7fffffff7390) at dominion.c:679
+679	 for(i = 0; i < 5; i++)
+Missing separate debuginfos, use: debuginfo-install glibc-2.17-196.el7_4.2.x86_64
+681	 drawCard(currentPlayer, state);
+drawCard (player=0, state=0x7fffffff7390) at dominion.c:528
+528	  if (state->deckCount[player] <= 0){//Deck is empty
+568	    int count = state->handCount[player];//Get current hand count for player
+574	    deckCounter = state->deckCount[player];//Create holder for the deck count
+575	    state->hand[player][count] = state->deck[player][deckCounter - 1];//Add card to the hand
+576	    state->deckCount[player]--;
+577	    state->handCount[player]++;//Increment hand count
+580	  return 0;
+581	}
+smithyCard (currentPlayer=0, handPos=1, state=0x7fffffff7390) at dominion.c:679
+679	 for(i = 0; i < 5; i++)
+681	 drawCard(currentPlayer, state);
+drawCard (player=0, state=0x7fffffff7390) at dominion.c:528
+528	  if (state->deckCount[player] <= 0){//Deck is empty
+568	    int count = state->handCount[player];//Get current hand count for player
+574	    deckCounter = state->deckCount[player];//Create holder for the deck count
+575	    state->hand[player][count] = state->deck[player][deckCounter - 1];//Add card to the hand
+576	    state->deckCount[player]--;
+577	    state->handCount[player]++;//Increment hand count
+580	  return 0;
+581	}
+smithyCard (currentPlayer=0, handPos=1, state=0x7fffffff7390) at dominion.c:679
+679	 for(i = 0; i < 5; i++)
+681	 drawCard(currentPlayer, state);
+drawCard (player=0, state=0x7fffffff7390) at dominion.c:528
+528	  if (state->deckCount[player] <= 0){//Deck is empty
+568	    int count = state->handCount[player];//Get current hand count for player
+574	    deckCounter = state->deckCount[player];//Create holder for the deck count
+575	    state->hand[player][count] = state->deck[player][deckCounter - 1];//Add card to the hand
+576	    state->deckCount[player]--;
+577	    state->handCount[player]++;//Increment hand count
+580	  return 0;
+581	}
+smithyCard (currentPlayer=0, handPos=1, state=0x7fffffff7390) at dominion.c:679
+679	 for(i = 0; i < 5; i++)
+681	 drawCard(currentPlayer, state);
+drawCard (player=0, state=0x7fffffff7390) at dominion.c:528
+528	  if (state->deckCount[player] <= 0){//Deck is empty
+568	    int count = state->handCount[player];//Get current hand count for player
+574	    deckCounter = state->deckCount[player];//Create holder for the deck count
+575	    state->hand[player][count] = state->deck[player][deckCounter - 1];//Add card to the hand
+576	    state->deckCount[player]--;
+577	    state->handCount[player]++;//Increment hand count
+580	  return 0;
+581	}
+smithyCard (currentPlayer=0, handPos=1, state=0x7fffffff7390) at dominion.c:679
+679	 for(i = 0; i < 5; i++)
+681	 drawCard(currentPlayer, state);
+drawCard (player=0, state=0x7fffffff7390) at dominion.c:528
+528	  if (state->deckCount[player] <= 0){//Deck is empty
+568	    int count = state->handCount[player];//Get current hand count for player
+574	    deckCounter = state->deckCount[player];//Create holder for the deck count
+575	    state->hand[player][count] = state->deck[player][deckCounter - 1];//Add card to the hand
+576	    state->deckCount[player]--;
+577	    state->handCount[player]++;//Increment hand count
+580	  return 0;
+581	}
+smithyCard (currentPlayer=0, handPos=1, state=0x7fffffff7390) at dominion.c:679
+679	 for(i = 0; i < 5; i++)
+684	 discardCard(handPos, currentPlayer, state, 0);
+discardCard (handPos=1, currentPlayer=0, state=0x7fffffff7390, trashFlag=0)
+    at dominion.c:1259
+1259	  if (trashFlag < 1)
+1262	      state->playedCards[state->playedCardCount] = state->hand[currentPlayer][handPos]; 
+1263	      state->playedCardCount++;
+1267	  state->hand[currentPlayer][handPos] = -1;
+1270	  if ( handPos == (state->handCount[currentPlayer] - 1) ) 	//last card in hand array is played
+1275	  else if ( state->handCount[currentPlayer] == 1 ) //only one card in hand
+1283	      state->hand[currentPlayer][handPos] = state->hand[currentPlayer][ (state->handCount[currentPlayer] - 1)];
+1285	      state->hand[currentPlayer][state->handCount[currentPlayer] - 1] = -1;
+1287	      state->handCount[currentPlayer]--;
+1290	  return 0;
+1291	}
+smithyCard (currentPlayer=0, handPos=1, state=0x7fffffff7390) at dominion.c:685
+685	 return 0;
+686	}
+cardEffect (card=13, choice1=0, choice2=0, choice3=0, state=0x7fffffff7390, handPos=1, 
+    bonus=0x0) at dominion.c:889
+889	      return 0;
+1253	}
+main () at cardtest1.c:49
+49		printf("Smithy Test 1: Hand Contains +2 Cards Overall\n");
+Continuing.
+[Inferior 1 (process 18305) exited with code 01]

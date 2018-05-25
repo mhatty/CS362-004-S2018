@@ -1,0 +1,17 @@
+Start Smithy Card Unit Tests 
+-------------------------------------------
+Smithy Test 1: Hand Contains +2 Cards Overall
+Cards in Hand before Smithy: 5
+Cards in Hand after Smithy: 7
+Test Passed!
+-------------------------------------------
+Smithy Test 2: Played Cards Contains +1 Cards Overall
+Cards in Played Cards before Smithy: 0
+Cards in Played Cards after Smithy: 1
+Test Passed!
+-------------------------------------------
+Smithy Test 3: Deck Contains 3 Less Cards Overall
+Cards in Deck before Smithy: 5
+Cards in Deck after Smithy: 2
+Test Passed!
+-------------------------------------------
