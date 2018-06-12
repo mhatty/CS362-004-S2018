@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="src" path="test"/>
+	<classpathentry exported="true" kind="lib" path="/Users/drummer307/Desktop/Oregon State Computer Science Files/Spring 2018/CS362/week8/CS362-004-S2018/FinalProject/junit-4.12.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
